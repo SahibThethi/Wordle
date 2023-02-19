@@ -11,23 +11,48 @@
     <div class="header">
       <h1>Wordle</h1>
       <div class="click">
-        <button class="editbutt" type="button">&#9681;</button>
-        <button class="editbutt" type="button">&#63;</button>
-        <button class="editbutt" type="button">&#9432;</button>
+        <button id="theme" type="button">&#9681;</button>
+        <button id="hint" type="button">&#63;</button>
+        <button id="instruct" type="button">&#9432;</button>
       </div>
     <div>
-
-    <div id="conatiner"></div>
-      <div id="game">
-        <div class="grid">
+    <div class="background">
+      <div id="left">
+        <div id="game">
+          <div id="congrats">
+          </div>
         </div>
+          <button id="startover" type="reset">Start Over</button>
       </div>
-      <button class="startover" type="reset">Start Over</button>
-  </div>
-
-
+      <div id="right" class="hidden2">
+        <h2 class="HTP"><b>How to Play</b></h2>
+        <ul>
+          <li>Start Typing. The letters will appear in the boxes</li>
+          <br> <br>
+          <li>Remove letters with Backspace</li>
+          <br> <br>
+          <li>Hit Enter/Return to submit an answer</li>
+          <br> <br>
+          <li>Letters with green background are in the right spot</li>
+          <br> <br>
+          <li>Letters with yellow background exist in the word, but are
+            in the wrong spots
+          </li>
+          <br> <br>
+          <li>Letters with gray backgrounds do not exist in the word</li>
+          <br> <br>
+          <li>if you need a hint, click the ? icon</li>
+        </ul>
+      </div>
+    </div>
+    <div id="hintBlock" class="hidden">
+    </div>
+    <div id = "lose" class="hidden">
+    </div>
+    <div id = "win" class="hidden">
+    </div>
     <footer>
-      <p>@ Sahib Thethi 2023</p>
+      <p>&#169; Sahib Thethi 2023</p>
     </footer>
 
   <script src="./wordle.js"></script>
